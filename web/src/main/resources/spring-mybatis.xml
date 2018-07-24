@@ -5,11 +5,13 @@
 
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"></property>
+        <!--针对需要xml时候-->
+        <!--<property name="mapperLocations" value="classpath*:com/cn/jzedy/web/mapper/xml/*.xml"></property>-->
     </bean>
 
     <!-- mapper扫描器 spring 与mybatis整合配置-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.cn.jzedy.common.mapper"/>
+        <property name="basePackage" value="com.cn.jzedy.web.mapper"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
     </bean>
 
