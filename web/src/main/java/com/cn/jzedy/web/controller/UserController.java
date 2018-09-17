@@ -27,8 +27,8 @@ public class UserController extends BaseController {
 
     @RequestMapping(value = "/test")
     public String test(Model model){
-        Users users = userService.findOne("2");
-        System.out.println(JSONObject.toJSONString(users));
+//        Users users = userService.findOne("2");
+//        System.out.println(JSONObject.toJSONString(users));
         return "/user/test";
     }
 }
