@@ -11,14 +11,14 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @auther Jzedy
+ * @author Jzedy
  * @time 2018/7/15 21:50
  * @description
  */
 @ControllerAdvice
 public class BaseController {
 
-    protected static final String REDIECT = "redirect:";
+    protected static final String REDIRECT = "redirect:";
 
 
     @ModelAttribute

@@ -1,6 +1,7 @@
 package com.cn.jzedy.web.controller;
 
 import com.alibaba.fastjson.JSONObject;
+import com.cn.jzedy.core.controller.BaseController;
 import com.cn.jzedy.web.mapper.UsersMapper;
 import com.cn.jzedy.web.repository.Users;
 import com.cn.jzedy.web.service.UserService;
@@ -12,13 +13,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import javax.annotation.Resource;
 
 /**
- * @auther Jzedy
+ * @author Jzedy
  * @time 2018/7/15 21:52
  * @description
  */
 @Controller
 @RequestMapping(value = "/user")
-public class UserController {
+public class UserController extends BaseController {
 
     @Resource(name = "userService")
     private UserService userService;
